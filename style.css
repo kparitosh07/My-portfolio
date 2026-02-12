@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Baloo Bhaijaan 2", sans-serif; */
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(23, 21, 21);
+}
+
+nav {
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+    font-family: "Poppins", sans-serif;
+    /* flex-wrap: wrap; */
+}
+
+.logo {
+    position: sticky;
+    color: rgb(255, 34, 0);
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.mid ul {
+    margin-block-start: 0px;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+    font-weight: 450;
+    position: sticky;
+}
+
+.mid ul li a {
+    position: sticky;
+    color: rgb(119, 115, 115);
+    text-decoration: none;
+}
+
+.mid ul li a:hover {
+    color: rgb(255, 119, 0);
+}
+
+.right {
+    border: 2px solid rgb(255, 119, 0);
+    border-style: none;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 119, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.right:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 119, 0);
+    scale: 1.2;
+    transition: all 0.25s ease-in;
+    font-weight: 450;
+}
+
+.home {
+    display: flex;
+}
+
+.box {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    margin: 75px;
+    padding: 10px;
+    /* display: flex; */
+}
+
+.text {
+    width: 42vw;
+    color: rgb(177, 167, 167);
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.sec {
+    color: rgb(255, 119, 0);
+    line-height: 1.39;
+    font-size: 28px;
+}
+
+.buttons ul {
+    margin-top: 25px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+
+}
+
+.buttons ul li a img {
+    width: 45px;
+    border: 2px solid #b1a7a7;
+    border-radius: 41px;
+    background-color: #b1a7a7;
+}
+
+.buttons ul li a img:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(255, 119, 0);
+}
+
+.white {
+    width: 45px;
+    background-color: white;
+}
+
+.button1 {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.one,
+.two {
+    display: flex;
+}
+
+.one a {
+    border: 2px solid rgb(255, 119, 0);
+    border-style: none;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 119, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.one:hover {
+    scale: 1.2;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+.one a:hover {
+    /* font-family: ; */
+    background-color: rgb(252, 252, 252);
+    color: rgb(255, 119, 0);
+    font-weight: 450;
+}
+
+.two a {
+    border: 2px solid rgb(255, 119, 0);
+    border-style: none;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 119, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.two:hover {
+    scale: 1.2;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+.two a:hover {
+    /* font-family: ; */
+    background-color: rgb(252, 252, 252);
+    color: rgb(255, 119, 0);
+    font-weight: 450;
+}
+
+.photo {
+    margin-top: -37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+}
+
+.photo img {
+    scale: 0.8;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#click,
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 340px) {
+    nav{
+        padding: 10px,0px;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+@media (max-width: 725px) {
+    .menu-btn {
+        display: block;
+        /* Show the "three lines" button */
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+
+    .mid ul {
+        position: absolute;
+        top: 106px;
+        left: -100%;
+        /* Hide the menu off-screen to the left */
+        background: #171515;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+        gap: 0px;
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    .mid ul li {
+        margin: 20px 0;
+    }
+
+    .mid ul li a {
+        color: rgb(243, 238, 238);
+    }
+
+    .mid ul li a:hover {
+        color: rgb(255, 119, 0);
+    }
+
+    .bbox{
+        border: transparent;
+    }
+
+    .co-text{
+        font: icon;
+    }
+
+    .co-text h4{
+        object-fit: contain;
+    }
+
+    .co-text p{
+        display: none;
+    }
+
+    .coll-img img,.sch-img img{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 1075px) {
+    .home {
+
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo img {
+        margin-top: -70px;
+    }
+
+    .text {
+        width: 62vw;
+    }
+
+    .photo {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    /* .about {
+        display: flex;
+        flex-wrap: wrap;
+    } */
+
+    .box2 {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+
+    }
+
+    .ab-text {
+        width: 100%;
+    }
+}
+
+.about {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
+.ab-head {
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.abnav h1 {
+    color: rgb(255, 119, 0);
+    padding: 5px;
+}
+
+.abnav h3 {
+    padding: 5px;
+    color: #b1a7a7;
+}
+
+.box2 {
+    width: 100%;
+    /* font-family: "Baloo Bhaijaan 2", sans-serif;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ab-text {
+    font-size: 22px;
+    width: 95vw;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    color: #b1a7a7;
+    font-weight: 500;
+}
+
+.ab-text p{
+    text-indent: 5vw;
+}
+
+.ab-text p span{
+    color: rgb(255, 119, 0);
+}
+
+.ed-head {
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 25px;
+}
+
+.ed-nav h1 {
+    color: rgb(255, 119, 0);
+    padding: 5px;
+}
+
+.ed-nav h3 {
+    padding: 5px;
+    color: #b1a7a7;
+}
+
+.box3 {
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: center;
+    display: grid;
+    gap: 25px;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 22px;
+    font-weight: 450;
+}
+
+.college {
+    display: flex;
+    border: 2px solid white;
+    width: 70vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+.college:hover ,
+.school:hover{
+    cursor: pointer;
+}
+
+.coll-img {
+    width: 25%;
+    display: flex;
+    border-radius: 15px;
+}
+
+.coll-img img {
+    width: 100%;
+    object-fit: contain;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.coll-text {
+    color: #b1a7a7;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.coll-text h2,
+.coll-text h3 {
+    color: rgb(255, 119, 0);
+    border-radius: 15px;
+}
+
+.school {
+    border-radius: 15px;
+    display: flex;
+    /* background-color: rgb(255, 0, 0); */
+    border: 2px solid white;
+    width: 70vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.sch-img {
+    border-radius: 15px;
+    width: 19%;
+    display: flex;
+}
+
+.sch-img img {
+    border-radius: 15px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sch-text {
+    border-radius: 15px;
+    color: #b1a7a7;
+    overflow: hidden;
+}
+
+.sch-text h2,
+.sch-text h3 {
+    border-radius: 15px;
+    color: rgb(255, 119, 0);
+}
+
+.skill-head{
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 25px;
+    color: rgb(255, 119, 0);
+}
+
+.skill-grid {
+    align-self: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+    width: 80vw;
+    display: grid;
+    gap: 32px;
+    /* background: lightseagreen; */
+    padding: 10px;
+    margin: auto;
+}
+
+.grid {
+    background-color: #1d1d1d;
+    border-radius: 50px;
+    height: 250px;
+    /* background: white; */
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.g-img1,
+.g-img1 img{
+    background:none;
+    scale: 1.1;
+    margin: 5px;
+}
+
+.grid h1{
+    background:none;
+    margin: 1px;
+    font-size: 33px;
+    color: rgb(255, 119, 0);
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.grid p{
+    background:none;
+    font-size: 25px;
+    color: #b1a7a7;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font: 400;
+}
+
+.grid button{
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 4px 12px 4px 12px;
+    margin: 2px;
+    background-color: lab(86.9953% -47.2691 25.0054);
+    font: 400;
+    font-size: 20px;
+}
+
+.grid:hover{
+    scale: 1.1;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 25px;
+}
+
+.box4 h1{
+    color: rgb(255, 119, 0);
+    margin: 15px;
+}
+
+.box4 h3{
+    margin-top: -16px;
+    font-size: 20px;
+    color: rgb(177, 167, 167);
+}
+
+.box5{
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.info h3{
+    color: rgb(255, 119, 0);
+    align-self: stretch ;
+
+}
+
+.bbox{
+    width: 30vw;
+    background-color: rgb(128, 0, 255);
+    border: 2px solid white;
+    border-radius: 15px;
+    
+}
+
+.bbox a{
+    text-decoration: none;
+}
+
+.con-box{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.bbox:hover{
+    scale: 1.03;
+}
+
+.co-img{
+    object-fit: contain;
+    margin: 5px;
+}
+
+.co-text {
+    color: rgb(255, 119, 0);
+    text-decoration: none;
+}
+
+.co-text p{
+    line-break: anywhere;
+    margin-top: -12px;
+    color: darkgray;
+    font-size: 20px;
+}
+
+.application{
+    width: 50vw;
+}
+
+.app-box{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+    margin: auto;
+}
+
+form{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+label{
+    background: none;
+    color: rgb(255, 119, 0);
+}
+
+input , textarea{
+    border-radius: 15px;
+    height: 30px;
+    background: none;
+    border-color: #cfcfcf;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 5px 5px 15px;
+    font-family: inherit;
+}
+
+
+input:hover , textarea:hover{
+    border-color: cyan;
+    font-size: 16px;
+    cursor: text;
+}
+
+textarea {
+    height: 250px;
+    resize: vertical; 
+    white-space: pre-wrap;
+    overflow-y: auto;
+    font-style: inherit;
+}
+
+.send-button{
+    margin: 25px 0px;
+    border: 2px solid rgb(0, 96, 250);
+    width: 25vw;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(255, 81, 0);
+    border-radius: 30px;
+    background-color: rgb(161, 158, 158);
+    cursor: pointer;
+    text-shadow: #000000;   
+}
+
+.send-button:hover{
+    scale: 1.1;
+    border-color: darkturquoise;
+}
