@@ -266,8 +266,8 @@ nav {
         color: rgb(255, 119, 0);
     }
 
-    .bbox{
-        border: transparent;
+    .con-box{
+        flex-direction: column;
     }
 
     .co-text{
@@ -276,6 +276,7 @@ nav {
 
     .co-text h4{
         object-fit: contain;
+        line-break: anywhere;
     }
 
     .co-text p{
@@ -284,6 +285,10 @@ nav {
 
     .coll-img img,.sch-img img{
         display: none;
+    }
+
+    input, textarea{
+        width: 100%;
     }
 }
 
@@ -681,6 +686,7 @@ textarea {
 }
 
 .send-button{
+    padding: 15px;
     margin: 25px 0px;
     border: 2px solid rgb(0, 96, 250);
     width: 25vw;
